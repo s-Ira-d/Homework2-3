@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+h1 {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+img.lazy-image {
+  height: 200px; /* Мінімальна висота для запобігання стрибків */
+  width: 100%;
+  object-fit: cover;
+  background-color: #f0f0f0; /* Фон до завантаження */
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0; /* Спочатку прозоре */
+}
+
+img.lazy-image.loaded {
+  opacity: 1; /* Коли завантажено – показати */
+}
+
+button#load-images-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./js/observe.js"></script>
+    <h1>Ліниве завантаження зображень</h1>
+    <p>
+      Зображення завантажуються лише тоді, коли потрапляють в область перегляду
+      або після натискання кнопки.
+    </p>
+
+    <button id="load-images-btn">Завантажити зображення</button>
+
+    <div class="image-container">
+        
+      <img data-src="images/image1.webp" alt="Image 1" class="lazy-image" />
+      <img data-src="images/image2.webp" alt="Image 2" class="lazy-image" />
+      <img data-src="images/image3.webp" alt="Image 3" class="lazy-image" />
+      <img data-src="images/image4.webp" alt="Image 4" class="lazy-image" />
+      <img data-src="images/image5.webp" alt="Image 5" class="lazy-image" />
+    </div>
+  </body>
+</html>
