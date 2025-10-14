@@ -1,29 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Ліниве завантаження зображень</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <script type="module" src="./index.js"></script>
-    <script type="module" src="./js/observe.js"></script>
-    <h1>Ліниве завантаження зображень</h1>
+    <h1>Демо: Ліниве завантаження зображень</h1>
     <p>
-      Зображення завантажуються лише тоді, коли потрапляють в область перегляду
-      або після натискання кнопки.
+      Зображення завантажуються тільки коли потрапляють у зону видимості або при
+      натисканні на кнопку.
     </p>
 
-    <button id="load-images-btn">Завантажити зображення</button>
+    <!-- Кнопка для ручного завантаження -->
+    <button id="loadImagesBtn">Завантажити всі зображення</button>
 
     <div class="image-container">
-        
-      <img data-src="images/image1.webp" alt="Image 1" class="lazy-image" />
-      <img data-src="images/image2.webp" alt="Image 2" class="lazy-image" />
-      <img data-src="images/image3.webp" alt="Image 3" class="lazy-image" />
-      <img data-src="images/image4.webp" alt="Image 4" class="lazy-image" />
-      <img data-src="images/image5.webp" alt="Image 5" class="lazy-image" />
+      <img
+        class="lazy"
+        data-src="img/35c7c25a77e2dcc39820b4f345fc65df.jpg"
+        alt="Зображення 1"
+      />
+      <img
+        class="lazy"
+        data-src="img/d1d46381d3c104837c94190352b4186b/jpg"
+        alt="Зображення 2"
+      />
+      <img
+        class="lazy"
+        data-src="img/fiery-red-and-orange-sunset-calm-ocean-reflecting-the-vibrant-colors-photo.jpg"
+        alt="Зображення 3"
+      />
+      <img
+        class="lazy"
+        data-src="img/photo-masthead-375-BoK_p8LG.webp"
+        alt="Зображення 4"
+      />
+      <img class="lazy" data-src="img/_117310488_16.jpg" alt="Зображення 5" />
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
