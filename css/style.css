@@ -1,33 +1,37 @@
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   padding: 20px;
-  background-color: #fff;
-  color: #333;
+  line-height: 1.6;
+  background-color: #fafafa;
 }
 
-.image-container {
-  display: flex;
-  flex-direction: column;
+h1 {
+  text-align: center;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
 
-img.lazy {
-  height: 200px; /* Мінімальна висота для резерву */
-  background-color: #f0f0f0; /* Сірий фон поки зображення не завантажене */
-  display: block;
+.lazy-image {
+  height: 200px; /* Мінімальна висота */
+  background-color: #f0f0f0; /* Фон для завантаження */
   width: 100%;
   object-fit: cover;
   transition: opacity 0.5s ease-in-out;
   opacity: 0;
 }
 
-img.lazy.loaded {
-  opacity: 1; /* Плавне з’явлення при завантаженні */
+.lazy-image.loaded {
+  opacity: 1;
 }
 
-button {
+button#load-images-btn {
+  display: block;
+  margin: 0 auto;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;

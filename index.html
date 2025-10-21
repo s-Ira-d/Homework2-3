@@ -2,44 +2,42 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ліниве завантаження зображень</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ледаче Завантаження Зображень</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Демо: Ліниве завантаження зображень</h1>
-    <p>
-      Зображення завантажуються тільки коли потрапляють у зону видимості або при
-      натисканні на кнопку.
-    </p>
+    <h1>Галерея з Ледачим Завантаженням</h1>
 
-    <!-- Кнопка для ручного завантаження -->
-    <button id="loadImagesBtn">Завантажити всі зображення</button>
+    <button id="load-images-btn">Завантажити зображення</button>
 
-    <div class="image-container">
+    <div class="image-gallery">
       <img
-        class="lazy"
-        data-src="img/35c7c25a77e2dcc39820b4f345fc65df.jpg"
-        alt="Зображення 1"
+        data-src="https://via.placeholder.com/800x600.webp?text=Image+1"
+        alt="Image 1"
+        class="lazy-image"
+        loading="lazy"
       />
       <img
-        class="lazy"
-        data-src="img/d1d46381d3c104837c94190352b4186b/jpg"
-        alt="Зображення 2"
+        data-src="https://via.placeholder.com/800x600.webp?text=Image+2"
+        alt="Image 2"
+        class="lazy-image"
+        loading="lazy"
       />
       <img
-        class="lazy"
-        data-src="img/fiery-red-and-orange-sunset-calm-ocean-reflecting-the-vibrant-colors-photo.jpg"
-        alt="Зображення 3"
+        data-src="https://via.placeholder.com/800x600.webp?text=Image+3"
+        alt="Image 3"
+        class="lazy-image"
+        loading="lazy"
       />
       <img
-        class="lazy"
-        data-src="img/photo-masthead-375-BoK_p8LG.webp"
-        alt="Зображення 4"
+        data-src="https://via.placeholder.com/800x600.webp?text=Image+4"
+        alt="Image 4"
+        class="lazy-image"
+        loading="lazy"
       />
-      <img class="lazy" data-src="img/_117310488_16.jpg" alt="Зображення 5" />
     </div>
 
-    <script src="script.js"></script>
+    <script src="lazyload.js"></script>
   </body>
 </html>
