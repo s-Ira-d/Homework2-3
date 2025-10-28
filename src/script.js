@@ -18,12 +18,6 @@ function loadImage(img) {
     img.classList.add("loaded");
     spinner.remove();
   };
-
-  // Якщо сталася помилка
-  tempImg.onerror = () => {
-    img.src = "https://via.placeholder.com/800x500?text=Помилка+завантаження";
-    spinner.remove();
-  };
 }
 
 // Налаштовуємо IntersectionObserver для спостереження за зображеннями
@@ -44,5 +38,5 @@ document.getElementById("enable-lazy-loading").addEventListener("click", () => {
 
   const btn = document.getElementById("enable-lazy-loading");
   btn.disabled = true;
-  btn.textContent = "Завантаження увімкнено!";
+  btn.textContent = "завантаження увімкнено!";
 });
